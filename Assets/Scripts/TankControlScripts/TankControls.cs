@@ -21,7 +21,10 @@ public class TankControls : MonoBehaviour
         {
             Jump();
         }
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Left mouse button clicked!");
+        }
     }
 
     private void LateUpdate()

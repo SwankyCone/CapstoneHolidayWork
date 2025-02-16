@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: edf0f6104c549e24e998604ff8bdd3a9
   - enabled: 1
+    path: Assets/Scenes/Diner_Base_Scene.unity
+    guid: 2bde36e1c370f634ba3a528b16cc9e07
+  - enabled: 0
     path: Assets/Scenes/TankControlsTest.unity
     guid: 87217ae5cf8bb1340872361aa66e8611
   m_configObjects: {}
