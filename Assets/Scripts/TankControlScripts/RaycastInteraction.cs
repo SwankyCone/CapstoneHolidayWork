@@ -9,11 +9,17 @@ public class RaycastInteraction : MonoBehaviour
     RaycastHit hit;
 
     public float interactionDistance = 5f;
+    private bool canInteract = true;
+    public float interactCoolDown = 1f;
 
     public void Update()
     {
-
-        RaycastInteract();
+        if (canInteract) 
+        
+        {
+            RaycastInteract();
+        }
+        
     }
 
     public void Start()
@@ -22,7 +28,8 @@ public class RaycastInteraction : MonoBehaviour
     }
     public void RaycastInteract()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        // alter so it can detect if the cooldown is a certain number so you can interact 
+        if (Input.GetKeyDown(KeyCode.E) && canInteract && interactCoolDown < 0)
         {
             Interact();
         }
@@ -30,7 +37,6 @@ public class RaycastInteraction : MonoBehaviour
 
     public void Interact()
     {
-
         ray = new Ray(transform.position, transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hit))
@@ -40,6 +46,9 @@ public class RaycastInteraction : MonoBehaviour
             if (hit.collider.CompareTag("interactable"))
             {
                 Debug.Log("interact with" + hit.collider.gameObject.name);
+                canInteract = false;
+                //interactCoolDown++;
+                interactCoolDown++;
             }
         }
     }

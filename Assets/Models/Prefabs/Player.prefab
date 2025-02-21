@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 3356522588513386405}
   - component: {fileID: 7717950660329240005}
   - component: {fileID: 7379767328286977846}
-  - component: {fileID: 4134339144159138104}
+  - component: {fileID: 1534832336744728053}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -258,7 +258,7 @@ MonoBehaviour:
   moveSpeed: 4
   rotateSpeed: 150
   jumpForce: 3
---- !u!114 &4134339144159138104
+--- !u!114 &1534832336744728053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,6 +267,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7271486073240212634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b19c4ec57b9423d40bea78241d2df555, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d8ce81069887194db758637e6562656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractRange: 5

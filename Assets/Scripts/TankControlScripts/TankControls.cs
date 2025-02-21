@@ -11,6 +11,7 @@ public class TankControls : MonoBehaviour
     private Rigidbody rb;
     public float jumpForce = 10f;
 
+
     private void Update()
     {
         movement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
@@ -21,10 +22,7 @@ public class TankControls : MonoBehaviour
         {
             Jump();
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Left mouse button clicked!");
-        }
+        
     }
 
     private void LateUpdate()
@@ -40,5 +38,5 @@ public class TankControls : MonoBehaviour
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
-
+   
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class LoadNextScene : MonoBehaviour
 {
@@ -9,5 +10,11 @@ public class LoadNextScene : MonoBehaviour
     {
         //SceneManager.LoadScene(" Scene 1 ");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit Game");
+        Application.Quit();
     }
 }
