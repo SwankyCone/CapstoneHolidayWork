@@ -10,6 +10,7 @@ public class TankControls : MonoBehaviour
     private float rotation;
     private Rigidbody rb;
     public float jumpForce = 10f;
+    public bool isGrounded = true;
 
 
     private void Update()
@@ -18,9 +19,10 @@ public class TankControls : MonoBehaviour
         rotation = Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime;
         rb = GetComponent<Rigidbody>();
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
+            
         }
         
     }

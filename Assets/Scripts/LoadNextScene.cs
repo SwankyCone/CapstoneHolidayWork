@@ -10,6 +10,7 @@ public class LoadNextScene : MonoBehaviour
     {
         //SceneManager.LoadScene(" Scene 1 ");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //Cursor.visible = false;
     }
 
     public void QuitGame()
