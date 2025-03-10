@@ -329,7 +329,7 @@ Material:
     - _NoiseTexScroll: {r: 0, g: 0.1, b: 0, a: 0}
     - _NonGrabColor: {r: 0, g: 0, b: 0, a: 0}
     - _NormalMapFlipbookScale: {r: 3, g: 3, b: 0, a: 0}
-    - _NormalMapScale0: {r: 3, g: 3, b: 0, a: 0}
+    - _NormalMapScale0: {r: 2, g: 2, b: 0, a: 0}
     - _NormalMapScale1: {r: 4, g: 4, b: 0, a: 0}
     - _NormalMapScroll0: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _NormalMapScroll1: {r: -0.1, g: 0.1, b: 0, a: 0}

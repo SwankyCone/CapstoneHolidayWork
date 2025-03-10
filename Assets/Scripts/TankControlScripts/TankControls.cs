@@ -15,6 +15,8 @@ public class TankControls : MonoBehaviour
 
     private void Update()
     {
+
+        
         movement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         rotation = Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime;
         rb = GetComponent<Rigidbody>();
@@ -24,6 +26,7 @@ public class TankControls : MonoBehaviour
             Jump();
             
         }
+        
         
     }
 
@@ -41,4 +44,6 @@ public class TankControls : MonoBehaviour
     }
 
    
+
+
 }
